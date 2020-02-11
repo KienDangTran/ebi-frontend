@@ -1,0 +1,53 @@
+{
+  "extends": [
+    "tslint-react",
+    "tslint:recommended",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "packages/*/lib",
+      "packages/*/esm"
+    ]
+  },
+  "jsRules": {
+    "max-line-length": {
+      "options": 100
+    },
+    "object-literal-sort-keys": false,
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "debug",
+        "info",
+        "log",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    }
+  },
+  "rules": {
+    "jsx-no-lambda": false,
+    "max-line-length": {
+      "options": 80
+    },
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "debug",
+        "info",
+        "log",
+        "time",
+        "timeEnd",
+        "trace"
+      ]
+    },
+    "object-literal-sort-keys": false,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ]
+  }
+}
